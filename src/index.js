@@ -1,15 +1,15 @@
 
 exports.min = function min (array) {
-  if (!arr || !arr.length) return 0;
-  else return arr.sort()[0];
+  if (!array || !array.length) return 0;
+  else return array.sort((a, b) => a - b)[0];
 }
 
 exports.max = function max (array) {
-  if (!arr || !arr.length) return 0;
-  else return arr.sort().reverse()[0];
+  if (!array || !array.length) return 0;
+  else return array.sort((a, b) => b - a)[0];
 }
 
 exports.avg = function avg (array) {
-  if (!arr || !arr.length) return 0;
-  else return arr.reduce((sum, i) => sum + i) / arr.length;
+  if (!array || !array.length) return 0;
+  else return array.reduce((sum, i) => sum + i) / array.length;
 }
